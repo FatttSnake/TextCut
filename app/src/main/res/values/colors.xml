@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#1bbc9b</color>
+    <color name="mainColorDark">#1bbc9b</color>
+    <color name="colorPrimary">@color/mainColor</color>
+    <color name="colorPrimaryDark">@color/mainColorDark</color>
+    <color name="colorAccent">@color/mainColor</color>
+    <color name="addTab">#FFFFFF</color>
+    <color name="background">#80666666</color>
+    <color name="main_color">@color/mainColor</color>
+    <color name="secondary_color">@color/colorAccent</color>
+</resources>

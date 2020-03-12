@@ -1,0 +1,15 @@
+<resources>
+    <string name="appName">Text Cut</string>
+    <string name="actionExit">退出</string>
+    <string name="originalTextPreview">源文本预览</string>
+    <string name="transCoding">转码中 %1$s%%\n(%2$s/%3$s)</string>
+    <string name="totalLine">共%1$s行</string>
+    <string name="cannotBack">无法返回该阶段</string>
+    <string name="exitWarn">再按一次退出程序</string>
+    <string name="permissionDenied">未获取到存储权限，请授权</string>
+    <string name="sourceTextEmpty">源文本为空</string>
+    <string name="cutNumberTooBig">源文本字数必须大于分割数量</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+</resources>
