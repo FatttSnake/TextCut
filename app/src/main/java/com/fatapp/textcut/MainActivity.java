@@ -2,6 +2,7 @@ package com.fatapp.textcut;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -50,7 +52,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getPermissins();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            new AlertDialog.Builder(this)
+                    .setTitle("提示")
+                    .setMessage("该应用暂未适配Android N及以上版本，请等待适配")
+                    .setPositiveButton("确定", null)
+                    .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                        @Override
+                        public void onDismiss(DialogInterface dialog) {
+                            System.exit(0);
+                        }
+                    })
+                    .show();
+        } else {
+            getPermissins();
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

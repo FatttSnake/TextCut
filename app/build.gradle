@@ -7,8 +7,8 @@ android {
         applicationId "com.fatapp.textcut"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 191112
-        versionName '1.0.191112'
+        versionCode 191228
+        versionName '1.0.191228'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     android.defaultConfig.vectorDrawables.useSupportLibrary = true
